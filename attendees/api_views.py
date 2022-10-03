@@ -32,6 +32,7 @@ def api_list_attendees(request, conference_id):
     ]
     return JsonResponse({"attendees": response})
 
+
 def api_show_attendee(request, pk):
     """
     Returns the details for the Attendee model specified
