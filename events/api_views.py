@@ -3,6 +3,7 @@ from common.json import ModelEncoder
 
 from .models import Conference, Location
 
+
 class LocationDetailEncoder(ModelEncoder):
     model = Location
     properties = [
@@ -77,8 +78,6 @@ def api_list_conferences(request):
         {"conferences": conferences},
         encoder=ConferenceListEncoder
     )
-
-
 
 
 def api_show_conference(request, pk):
